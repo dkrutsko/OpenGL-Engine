@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3C00CC00-94A5-45C1-A224-6B3DC44661BE}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Engine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)d</TargetName>
+    <OutDir>$(SolutionDir)\Binaries\</OutDir>
+    <IntDir>$(OutDir)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\Binaries\</OutDir>
+    <IntDir>$(OutDir)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;UNICODE;DEBUG;_CRT_SECURE_NO_WARNINGS;QT;QT_CORE_LIB;QT_XML_LIB;QT_NO_STL;QT_LARGEFILE_SUPPORT</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\Libraries\FBX\Include\;$(SolutionDir)Libraries\Glew\Include\;$(SolutionDir)\Libraries\QT\Include\;$(SolutionDir)\Libraries\QT\Include\QtCore;$(SolutionDir)\Libraries\QT\Include\QtXml;$(SolutionDir)\Libraries\SDL\Include\</AdditionalIncludeDirectories>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\FBX\Library\;$(SolutionDir)Libraries\Glew\Library\;$(SolutionDir)\Libraries\QT\Library;$(SolutionDir)\Libraries\SDL\Library\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>imm32.lib;ws2_32.lib;winmm.lib;wininet.lib;glu32.lib;opengl32.lib;FbxSdkd.lib;Glewd.lib;QtCored.lib;QtXmld.lib;DxGuid.lib;SDLd.lib;SDLmaind.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;UNICODE;NDEBUG;_CRT_SECURE_NO_WARNINGS;QT;QT_CORE_LIB;QT_XML_LIB;QT_NO_STL;QT_LARGEFILE_SUPPORT</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\Libraries\FBX\Include\;$(SolutionDir)Libraries\Glew\Include\;$(SolutionDir)\Libraries\QT\Include\;$(SolutionDir)\Libraries\QT\Include\QtCore;$(SolutionDir)\Libraries\QT\Include\QtXml;$(SolutionDir)\Libraries\SDL\Include\</AdditionalIncludeDirectories>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\Libraries\FBX\Library\;$(SolutionDir)Libraries\Glew\Library\;$(SolutionDir)\Libraries\QT\Library;$(SolutionDir)\Libraries\SDL\Library\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>imm32.lib;ws2_32.lib;winmm.lib;wininet.lib;glu32.lib;opengl32.lib;FbxSdk.lib;Glew.lib;QtCore.lib;QtXml.lib;DxGuid.lib;SDL.lib;SDLmain.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Content\Asset.cc" />
+    <ClCompile Include="Content\Content.cc" />
+    <ClCompile Include="Content\Processors\AstProcessor.cc" />
+    <ClCompile Include="Content\Processors\Ast\AstModelProcessor.cc" />
+    <ClCompile Include="Content\Processors\Ast\AstParticleSystemProcessor.cc" />
+    <ClCompile Include="Content\Processors\Ast\AstShaderProcessor.cc" />
+    <ClCompile Include="Content\Processors\Ast\AstTextureProcessor.cc" />
+    <ClCompile Include="Content\Processors\FbxProcessor.cc" />
+    <ClCompile Include="Content\Processors\TgaProcessor.cc" />
+    <ClCompile Include="Content\Processors\XmlProcessor.cc" />
+    <ClCompile Include="Content\Processors\Xml\XmlModelProcessor.cc" />
+    <ClCompile Include="Content\Processors\Xml\XmlParticleSystemProcessor.cc" />
+    <ClCompile Include="Content\Processors\Xml\XmlShaderProcessor.cc" />
+    <ClCompile Include="Demo\Camera.cc" />
+    <ClCompile Include="Demo\Demo.cc" />
+    <ClCompile Include="Demo\Entity.cc" />
+    <ClCompile Include="Demo\ShadowMap.cc" />
+    <ClCompile Include="Engine\Console.cc" />
+    <ClCompile Include="Engine\Engine.cc" />
+    <ClCompile Include="Engine\Input.cc" />
+    <ClCompile Include="Engine\Settings.cc" />
+    <ClCompile Include="Graphics\Color.cc" />
+    <ClCompile Include="Graphics\Light.cc" />
+    <ClCompile Include="Graphics\Material.cc" />
+    <ClCompile Include="Graphics\Mesh.cc" />
+    <ClCompile Include="Graphics\Model.cc" />
+    <ClCompile Include="Graphics\ParticleSystem.cc" />
+    <ClCompile Include="Graphics\Shader.cc" />
+    <ClCompile Include="Graphics\Texture.cc" />
+    <ClCompile Include="Graphics\Vertex.cc" />
+    <ClCompile Include="Math\Math.cc" />
+    <ClCompile Include="Math\Matrix.cc" />
+    <ClCompile Include="Math\Plane.cc" />
+    <ClCompile Include="Math\Quaternion.cc" />
+    <ClCompile Include="Math\Random.cc" />
+    <ClCompile Include="Math\Vector2.cc" />
+    <ClCompile Include="Math\Vector3.cc" />
+    <ClCompile Include="Math\Vector4.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Content\Asset.h" />
+    <ClInclude Include="Content\Content.h" />
+    <ClInclude Include="Content\Processor.h" />
+    <ClInclude Include="Content\Processors\AstProcessor.h" />
+    <ClInclude Include="Content\Processors\FbxProcessor.h" />
+    <ClInclude Include="Content\Processors\TgaProcessor.h" />
+    <ClInclude Include="Content\Processors\XmlProcessor.h" />
+    <ClInclude Include="Demo\Camera.h" />
+    <ClInclude Include="Demo\Demo.h" />
+    <ClInclude Include="Demo\Entity.h" />
+    <ClInclude Include="Demo\ShadowMap.h" />
+    <ClInclude Include="Engine\Console.h" />
+    <ClInclude Include="Engine\Engine.h" />
+    <ClInclude Include="Engine\Input.h" />
+    <ClInclude Include="Engine\Settings.h" />
+    <ClInclude Include="Graphics\Collections.h" />
+    <ClInclude Include="Graphics\Color.h" />
+    <ClInclude Include="Graphics\Light.h" />
+    <ClInclude Include="Graphics\Material.h" />
+    <ClInclude Include="Graphics\Mesh.h" />
+    <ClInclude Include="Graphics\Model.h" />
+    <ClInclude Include="Graphics\ParticleSystem.h" />
+    <ClInclude Include="Graphics\Shader.h" />
+    <ClInclude Include="Graphics\Texture.h" />
+    <ClInclude Include="Graphics\Vertex.h" />
+    <ClInclude Include="Math\Math.h" />
+    <ClInclude Include="Math\Matrix.h" />
+    <ClInclude Include="Math\Plane.h" />
+    <ClInclude Include="Math\Quaternion.h" />
+    <ClInclude Include="Math\Random.h" />
+    <ClInclude Include="Math\Vector2.h" />
+    <ClInclude Include="Math\Vector3.h" />
+    <ClInclude Include="Math\Vector4.h" />
+    <ClInclude Include="Version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\LICENSE" />
+    <None Include="..\README.md" />
+    <None Include="Engine\Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Engine\Resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

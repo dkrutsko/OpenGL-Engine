@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Content">
+      <UniqueIdentifier>{0a406475-3b5d-49d2-a0a8-17198f8fe6c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Demo">
+      <UniqueIdentifier>{e50d23ca-7043-4f2c-a92d-0827d82ee7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{b52dcd54-6656-462d-b501-4f564dd80af6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{37b91efd-8eb0-4ef2-9eb3-9abf67357346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Math">
+      <UniqueIdentifier>{97c48d1f-2033-4925-8512-01dff96cfd86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Processors">
+      <UniqueIdentifier>{75f08c23-b0aa-4d72-b377-6a5f4abd771f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Processors\Ast">
+      <UniqueIdentifier>{9ba4d046-5338-4065-a50c-a62d70b75194}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Processors\Xml">
+      <UniqueIdentifier>{3f7ff4c3-746b-4663-b5e4-fc0185a966d5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Content\Asset.cc">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Content.cc">
+      <Filter>Content</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\AstProcessor.cc">
+      <Filter>Content\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\FbxProcessor.cc">
+      <Filter>Content\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\TgaProcessor.cc">
+      <Filter>Content\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\XmlProcessor.cc">
+      <Filter>Content\Processors</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\Xml\XmlModelProcessor.cc">
+      <Filter>Content\Processors\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\Xml\XmlParticleSystemProcessor.cc">
+      <Filter>Content\Processors\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\Xml\XmlShaderProcessor.cc">
+      <Filter>Content\Processors\Xml</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\Ast\AstModelProcessor.cc">
+      <Filter>Content\Processors\Ast</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\Ast\AstParticleSystemProcessor.cc">
+      <Filter>Content\Processors\Ast</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\Ast\AstShaderProcessor.cc">
+      <Filter>Content\Processors\Ast</Filter>
+    </ClCompile>
+    <ClCompile Include="Content\Processors\Ast\AstTextureProcessor.cc">
+      <Filter>Content\Processors\Ast</Filter>
+    </ClCompile>
+    <ClCompile Include="Demo\Camera.cc">
+      <Filter>Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Demo\Demo.cc">
+      <Filter>Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Demo\Entity.cc">
+      <Filter>Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Demo\ShadowMap.cc">
+      <Filter>Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Console.cc">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Engine.cc">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Input.cc">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Settings.cc">
+      <Filter>Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Color.cc">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Light.cc">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Material.cc">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Mesh.cc">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Model.cc">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\ParticleSystem.cc">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Shader.cc">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Texture.cc">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphics\Vertex.cc">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Matrix.cc">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Plane.cc">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Quaternion.cc">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Random.cc">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector2.cc">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector3.cc">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Vector4.cc">
+      <Filter>Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Math\Math.cc">
+      <Filter>Math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Content\Asset.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Content.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Processor.h">
+      <Filter>Content</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Processors\AstProcessor.h">
+      <Filter>Content\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Processors\FbxProcessor.h">
+      <Filter>Content\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Processors\TgaProcessor.h">
+      <Filter>Content\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="Content\Processors\XmlProcessor.h">
+      <Filter>Content\Processors</Filter>
+    </ClInclude>
+    <ClInclude Include="Demo\Camera.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Demo\Demo.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Demo\Entity.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Demo\ShadowMap.h">
+      <Filter>Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Console.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Engine.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Input.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Settings.h">
+      <Filter>Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Collections.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Color.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Light.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Material.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Mesh.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Model.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\ParticleSystem.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Shader.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Texture.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphics\Vertex.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Math.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Matrix.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Plane.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Quaternion.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Random.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector2.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector3.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Math\Vector4.h">
+      <Filter>Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Engine\Icon.ico">
+      <Filter>Engine</Filter>
+    </None>
+    <None Include="..\LICENSE" />
+    <None Include="..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Engine\Resource.rc">
+      <Filter>Engine</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
