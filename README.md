@@ -7,21 +7,21 @@ This application features a sample testing environment running on a custom-built
 ### Movement
 * W – Move Forward
 * S – Move Backward
-* A – Turn left
-* D – Turn right
+* A – Turn Left
+* D – Turn Right
 * A + RMB – Strafe Left
 * D + RMB – Strafe Right
-* LMB – Look around the screen
-* SPACE – Move up
+* LMB – Look Around the Screen
+* SPACE – Move Up
 * CTRL – Move Down
-* Q – Reset camera default position
-* HOLD SHIFT – Faster movement
+* Q – Reset Camera Position
+* HOLD SHIFT – Faster Movement
 
 ### Controls
-* Keypad 1 – Switch to camera 1
-* Keypad 2 – Switch to camera 2
-* Keypad 3 – Switch to orbital shadow camera
-* Keypad 5 – Disable rain effects (Handy)
+* Keypad 1 – Switch to Camera 1
+* Keypad 2 – Switch to Camera 2
+* Keypad 3 – Switch to Shadow Camera
+* Keypad 5 – Disable Rain Effects
 
 ### Compiling
 * Extract zip file inside the libraries directory
